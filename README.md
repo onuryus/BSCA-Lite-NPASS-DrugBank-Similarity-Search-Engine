@@ -62,8 +62,8 @@ cd ../..
 ### 3. Clone and build BSCA Lite
 
 ```bash
-git clone https://github.com/onuryus/BSCA-lite.git
-cd BSCA-lite
+git clone https://github.com/onuryus/BSCA-Lite-NPASS-DrugBank-Similarity-Search-Engine.git
+cd BSCA-Lite-NPASS-DrugBank-Similarity-Search-Engine
 
 mkdir build_dir && cd build_dir
 cmake .. -DCMAKE_BUILD_TYPE=Release
@@ -145,10 +145,10 @@ Select output format:
 Enter query SMILES (or 'quit'): CC(=O)Oc1ccccc1C(=O)O
 
 [PHASE] Phase 2: NPASS similarity search
-  [OK]  50 hits  |  top: 1.0000  |  43 ms
+  [OK]  50 hits  |  top: 1.0000  |  16 ms
 
 [PHASE] Phase 3: DrugBank similarity search
-  [OK]  50 hits  |  top: 1.0000  |  180 ms
+  [OK]  50 hits  |  top: 1.0000  |  108 ms
 ```
 
 Results are written to `$IDIR/results_npass.tsv` and `$IDIR/results_drugbank.tsv`.
@@ -190,10 +190,10 @@ Benchmarked on a CPU (12 threads):
 
 | Phase | Time |
 |---|---|
-| Database load (first query only) | ~10 s |
-| NPASS search (203K compounds, pre-computed FPs) | ~50 ms |
-| DrugBank search (20K compounds) | ~200 ms |
-| **Total per query** | **~0.3 s** |
+| Database load (first query only) | ~2 s |
+| NPASS search (203K compounds, pre-computed FPs) | ~20 ms |
+| DrugBank search (20K compounds) | ~120 ms |
+| **Total per query** | **~0.2 s** |
 
 ---
 
