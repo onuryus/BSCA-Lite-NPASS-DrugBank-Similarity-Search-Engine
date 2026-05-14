@@ -1,0 +1,17 @@
+#!/bin/bash
+# config.sh — copy this file to config.sh and fill in your paths.
+# config.sh is gitignored and never committed.
+
+# Raw NPASS download directory (contains NPASS3.0_activities.txt etc.)
+# Download from: https://bidd.group/NPASS/
+NPASS_RAW=""
+
+# DrugBank XML export — download from https://go.drugbank.com/releases/latest
+# (free academic account required)
+DRUGBANK_XML=""
+
+# Index output directory (will be created automatically)
+IDIR=""
+
+# ── Optional: Enamine REAL (only needed if you want Enamine search) ──────────
+# ENAMINE=""          # Enamine REAL Database CXSMILES file
