@@ -46,4 +46,4 @@ cd "$BUILD"
     --top          50 \
     --out-mode     both \
     --out          "$IDIR/results.tsv" \
-    --no-gpu
+#    --no-gpu
